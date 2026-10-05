@@ -26,7 +26,7 @@ const s = StyleSheet.create({
   parties: { flexDirection: 'row', marginTop: 1.6 },
   partyLeft: { marginLeft: 20, width: 334 },
   partyRight: { marginLeft: 3.4, width: 222 },
-  partyName: { fontSize: 12, fontWeight: 700, lineHeight: 1.333, marginBottom: -3.7 },
+  partyName: { fontSize: 12, fontWeight: 700, lineHeight: 1.333 },
   partyLine: { fontSize: 12, lineHeight: 1.333 },
 
   // Items table
@@ -130,7 +130,7 @@ export default function InvoiceDocument({ config, data }) {
             ))}
           </View>
           <View style={s.partyRight}>
-            <Text style={{ ...s.partyLine, marginBottom: -3.7 }}>{config.paymentTerms}</Text>
+            <Text style={s.partyLine}>{config.paymentTerms}</Text>
             <Text style={s.partyLine}>Date issued: {formatDate(data.dateIssued)}</Text>
             <Text style={s.partyLine}>Due date: {formatDate(data.dueDate)}</Text>
           </View>
