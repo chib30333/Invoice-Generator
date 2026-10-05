@@ -1,3 +1,7 @@
-node_modules
-dist
-sample-invoice.pdf
+node_modules/
+.next/
+__pycache__/
+*.pyc
+*.db
+.env
+.venv/
